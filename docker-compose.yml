@@ -1,0 +1,6 @@
+services:
+  shoutrrr:
+    build: .
+    container_name: shoutrrr
+    environment:
+      - TZ=Europe/London
