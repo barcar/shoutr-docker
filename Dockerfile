@@ -1,3 +1,3 @@
 FROM containrrr/shoutrrr:latest
-RUN apk --no-cache add tail
+RUN apk add --update --no-cache tail 
 CMD ["tail", "-f", "/dev/null"]]
