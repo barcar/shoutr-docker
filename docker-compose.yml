@@ -1,6 +1,7 @@
 services:
   shoutrrr:
     build: .
+    pull_policy: build
     container_name: shoutrrr
     environment:
       - TZ=Europe/London
