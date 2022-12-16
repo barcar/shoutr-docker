@@ -1,4 +1,4 @@
-FROM golang:latest-alpine
+FROM golang:latest
  
 RUN go install github.com/containrrr/shoutrrr@latest
 
