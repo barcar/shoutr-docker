@@ -5,3 +5,9 @@ services:
     container_name: shoutrrr
     environment:
       - TZ=Europe/London
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    network_mode: host
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
